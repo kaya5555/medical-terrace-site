@@ -7,18 +7,18 @@
 <meta name="description" content="倉敷中島メディカルテラスは、岡山県倉敷市中島にある医療モールです。オール薬局中島店（調剤薬局）とはまもと耳鼻咽喉科クリニックが開業。駐車場28台。1区画募集中。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Montserrat:wght@600&text=%E5%80%89%E6%95%B7%E4%B8%AD%E5%B3%B6%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%86%E3%83%A9%E3%82%B9MEDICALTERRACE%20&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #FAFAF7;
-    --bg-soft: #F1F3EC;
-    --ink: #24312B;
-    --ink-soft: #5B6A61;
-    --accent: #2E6E4E;
-    --accent-soft: #DCE8DF;
-    --amber: #B97B22;
-    --amber-soft: #F6EAD5;
-    --line: #DCE1D8;
+    --bg: #FBFDFC;
+    --bg-soft: #EDF6F5;
+    --ink: #1E3634;
+    --ink-soft: #577370;
+    --accent: #1F9E99;
+    --accent-soft: #D5EFED;
+    --amber: #C47F1F;
+    --amber-soft: #FBEFD9;
+    --line: #D7E7E5;
     --card: #FFFFFF;
     /* テナントカラー: いずれもロゴ画像の実測値。薬局 #A61955 / 淡 #F4E2EA、耳鼻科 #009FE8 / 淡 #DFF3FF */
     --pharm: #A61955;
@@ -30,16 +30,16 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #141A17;
-      --bg-soft: #1B2420;
-      --ink: #E7ECE8;
-      --ink-soft: #9FAEA5;
-      --accent: #6FAE8B;
-      --accent-soft: #24382E;
-      --amber: #D9A050;
-      --amber-soft: #3A2F1B;
-      --line: #2A342E;
-      --card: #1B2420;
+      --bg: #0F1F1E;
+      --bg-soft: #162928;
+      --ink: #E6F0EE;
+      --ink-soft: #9DB7B4;
+      --accent: #5FCFC9;
+      --accent-soft: #1D3E3C;
+      --amber: #E0A450;
+      --amber-soft: #3B2E17;
+      --line: #27403E;
+      --card: #162928;
       --pharm: #A61955;
       --pharm-ink: #EE8FB6;
       --pharm-soft: #3B1A2A;
@@ -49,16 +49,16 @@
     }
   }
   :root[data-theme="dark"] {
-    --bg: #141A17;
-    --bg-soft: #1B2420;
-    --ink: #E7ECE8;
-    --ink-soft: #9FAEA5;
-    --accent: #6FAE8B;
-    --accent-soft: #24382E;
-    --amber: #D9A050;
-    --amber-soft: #3A2F1B;
-    --line: #2A342E;
-    --card: #1B2420;
+    --bg: #0F1F1E;
+    --bg-soft: #162928;
+    --ink: #E6F0EE;
+    --ink-soft: #9DB7B4;
+    --accent: #5FCFC9;
+    --accent-soft: #1D3E3C;
+    --amber: #E0A450;
+    --amber-soft: #3B2E17;
+    --line: #27403E;
+    --card: #162928;
     --pharm: #A61955;
     --pharm-ink: #EE8FB6;
     --pharm-soft: #3B1A2A;
@@ -67,15 +67,15 @@
     --clinic-soft: #0F2E3F;
   }
   :root[data-theme="light"] {
-    --bg: #FAFAF7;
-    --bg-soft: #F1F3EC;
-    --ink: #24312B;
-    --ink-soft: #5B6A61;
-    --accent: #2E6E4E;
-    --accent-soft: #DCE8DF;
-    --amber: #B97B22;
-    --amber-soft: #F6EAD5;
-    --line: #DCE1D8;
+    --bg: #FBFDFC;
+    --bg-soft: #EDF6F5;
+    --ink: #1E3634;
+    --ink-soft: #577370;
+    --accent: #1F9E99;
+    --accent-soft: #D5EFED;
+    --amber: #C47F1F;
+    --amber-soft: #FBEFD9;
+    --line: #D7E7E5;
     --card: #FFFFFF;
     --pharm: #A61955;
     --pharm-ink: #A61955;
@@ -99,7 +99,8 @@
     -webkit-font-smoothing: antialiased;
   }
   .serif {
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    font-weight: 700;
   }
   .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
@@ -131,8 +132,8 @@
     font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
     font-weight: 800; line-height: 1.1; white-space: nowrap;
   }
-  .brand-top { font-size: 15px; letter-spacing: 0.12em; text-indent: 0.12em; }
-  .brand-main { font-size: 34px; letter-spacing: 0.01em; margin-top: 3px; }
+  .brand-top { font-size: 20px; letter-spacing: 0.10em; text-indent: 0.10em; }
+  .brand-main { font-size: 34px; letter-spacing: 0.01em; margin-top: 1px; }
   .brand-en { font-family: "Montserrat", "Hiragino Sans", Arial, sans-serif; font-weight: 600; font-size: 10.5px; letter-spacing: 0.30em; text-indent: 0.30em; margin-top: 6px; color: rgba(255,255,255,0.92); }
   nav.global { display: flex; gap: 24px; font-size: 14px; }
   nav.global a { color: var(--ink-soft); text-decoration: none; letter-spacing: 0.05em; }
@@ -156,7 +157,7 @@
   }
   h1 {
     font-size: clamp(30px, 5.4vw, 46px);
-    font-weight: 600; letter-spacing: 0.10em; line-height: 1.4;
+    font-weight: 700; letter-spacing: 0.04em; line-height: 1.4;
     text-wrap: balance; margin: 0 0 20px;
   }
   .hero-lead { font-size: 16px; color: var(--ink-soft); letter-spacing: 0.06em; max-width: 44em; }
@@ -177,7 +178,7 @@
     font-weight: 700; margin-bottom: 12px;
   }
   h2 {
-    font-size: 26px; font-weight: 600; letter-spacing: 0.08em;
+    font-size: 26px; font-weight: 700; letter-spacing: 0.04em;
     margin: 0 0 32px; text-wrap: balance;
   }
 
@@ -277,7 +278,7 @@
     .wrap { padding: 0 20px; }
     .site-inner { padding: 14px 0 12px; gap: 10px 16px; }
     .brand { padding: 9px 20px 8px; }
-    .brand-top { font-size: 12px; }
+    .brand-top { font-size: 15.5px; }
     .brand-main { font-size: 26px; }
     .brand-en { font-size: 8.5px; letter-spacing: 0.26em; text-indent: 0.26em; }
     nav.global { gap: 14px; font-size: 13px; }
