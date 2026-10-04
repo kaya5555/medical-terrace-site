@@ -118,7 +118,7 @@
     display: flex; align-items: center; justify-content: space-between;
     gap: 16px; padding: 18px 0; flex-wrap: wrap;
   }
-  .site-name { font-size: clamp(26px, 4.5vw, 34px); font-weight: 700; letter-spacing: 0.08em; }
+  .site-name { font-size: clamp(26px, 4.5vw, 34px); font-weight: 700; letter-spacing: 0.08em; color: var(--accent); }
   nav.global { display: flex; gap: 24px; font-size: 14px; }
   nav.global a { color: var(--ink-soft); text-decoration: none; letter-spacing: 0.05em; }
   nav.global a:hover, nav.global a:focus-visible { color: var(--accent); }
@@ -225,6 +225,7 @@
   /* アクセス */
   .access { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
   @media (max-width: 720px) { .access { grid-template-columns: 1fr; } }
+  .h2-sub { white-space: nowrap; }
   .map { aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); background: var(--bg-soft); }
   .map iframe { display: block; width: 100%; height: 100%; border: 0; }
   .map-note { margin: 8px 0 0; font-size: 12.5px; color: var(--ink-soft); }
@@ -255,6 +256,28 @@
     padding: 32px 0 48px;
     font-size: 13px; color: var(--ink-soft);
     display: flex; flex-direction: column; gap: 6px;
+  }
+  /* スマホ */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    .site-inner { padding: 14px 0 12px; gap: 10px 16px; }
+    .site-name { font-size: clamp(24px, 6.6vw, 28px); letter-spacing: 0.06em; }
+    nav.global { gap: 14px; font-size: 13px; }
+    .hero { padding: 48px 0 44px; }
+    h1 { font-size: clamp(23px, 7.4vw, 30px); letter-spacing: 0.05em; line-height: 1.45; margin-bottom: 16px; }
+    .hero-lead { font-size: 15px; letter-spacing: 0.03em; line-height: 1.9; }
+    .hero-lead br, .recruit p br { display: none; }
+    .hero-meta { margin-top: 28px; gap: 8px 24px; }
+    .hero-visual { margin-top: 32px; }
+    section { padding: 48px 0; }
+    h2 { font-size: 22px; margin-bottom: 24px; }
+    .recruit p { letter-spacing: 0.03em; word-break: normal; }
+    dl.info div { grid-template-columns: 5.5em 1fr; font-size: 14px; }
+    dl.info dd { word-break: keep-all; overflow-wrap: anywhere; }
+    dl.info div { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
+    dl.info dt { font-size: 12px; letter-spacing: 0.14em; color: var(--accent); font-weight: 700; }
+    .recruit { padding: 22px 20px; }
+    .h2-sub { display: block; font-size: 0.72em; letter-spacing: 0.06em; margin-top: 6px; color: var(--ink-soft); }
   }
 </style>
 </head>
@@ -329,7 +352,7 @@
 <section id="recruit">
   <div class="wrap">
     <div class="sec-label">RECRUIT</div>
-    <h2 class="serif">開業をご検討の先生へ（1区画募集中）</h2>
+    <h2 class="serif">開業をご検討の先生へ<span class="h2-sub">（1区画募集中）</span></h2>
     <div class="recruit">
       <p>倉敷中島メディカルテラスでは、ご開業いただく医療機関を1区画募集しています。<br>調剤薬局と耳鼻咽喉科クリニックが開業しています。</p>
       <p>診療科目や区画の詳細は、お気軽にお問い合わせください。</p>
