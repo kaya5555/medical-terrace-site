@@ -119,7 +119,18 @@
     display: flex; align-items: center; justify-content: space-between;
     gap: 16px; padding: 18px 0; flex-wrap: wrap;
   }
-  .site-name { font-size: clamp(26px, 4.5vw, 34px); font-weight: 700; letter-spacing: 0.08em; color: var(--accent); }
+  /* 看板と同じ3段組ロゴ（青緑の帯に白文字） */
+  .brand {
+    display: inline-flex; flex-direction: column; align-items: center;
+    background: linear-gradient(180deg, #3FBDB8 0%, #2AA7A4 100%);
+    color: #FFFFFF; text-align: center; text-decoration: none;
+    padding: 10px 24px 9px; border-radius: 6px;
+    font-family: "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.15; white-space: nowrap;
+  }
+  .brand-top { font-size: 14px; font-weight: 700; letter-spacing: 0.24em; text-indent: 0.24em; }
+  .brand-main { font-size: 27px; font-weight: 800; letter-spacing: 0.05em; margin-top: 2px; }
+  .brand-en { font-size: 9.5px; font-weight: 600; letter-spacing: 0.32em; text-indent: 0.32em; margin-top: 5px; opacity: 0.95; }
   nav.global { display: flex; gap: 24px; font-size: 14px; }
   nav.global a { color: var(--ink-soft); text-decoration: none; letter-spacing: 0.05em; }
   nav.global a:hover, nav.global a:focus-visible { color: var(--accent); }
@@ -266,7 +277,10 @@
   @media (max-width: 640px) {
     .wrap { padding: 0 20px; }
     .site-inner { padding: 14px 0 12px; gap: 10px 16px; }
-    .site-name { font-size: clamp(24px, 6.6vw, 28px); letter-spacing: 0.06em; }
+    .brand { padding: 8px 18px 7px; }
+    .brand-top { font-size: 12px; }
+    .brand-main { font-size: 23px; }
+    .brand-en { font-size: 8.5px; }
     nav.global { gap: 14px; font-size: 13px; }
     .hero { padding: 48px 0 44px; }
     h1 { font-size: clamp(23px, 7.4vw, 30px); letter-spacing: 0.05em; line-height: 1.45; margin-bottom: 16px; }
@@ -292,7 +306,11 @@
 
 <header class="site">
   <div class="wrap site-inner">
-    <div class="site-name serif">倉敷中島メディカルテラス</div>
+    <a class="brand" href="#" aria-label="倉敷中島メディカルテラス（ページの先頭へ）">
+      <span class="brand-top">倉敷中島</span>
+      <span class="brand-main">メディカルテラス</span>
+      <span class="brand-en">MEDICAL TERRACE</span>
+    </a>
     <nav class="global" aria-label="ページ内">
       <a href="#floor">フロア案内</a>
       <a href="#recruit">区画募集</a>
