@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>倉敷中島メディカルテラス｜倉敷市中島の医療モール（ロゴ掲載案・非掲載プレビュー）</title>
+<meta name="description" content="倉敷中島メディカルテラスは、岡山県倉敷市中島にある医療モールです。オール薬局中島店（調剤薬局）とはまもと耳鼻咽喉科クリニックが開業。駐車場28台。1区画募集中。">
+<style>
+  :root {
+    --bg: #FAFAF7;
+    --bg-soft: #F1F3EC;
+    --ink: #24312B;
+    --ink-soft: #5B6A61;
+    --accent: #2E6E4E;
+    --accent-soft: #DCE8DF;
+    --amber: #B97B22;
+    --amber-soft: #F6EAD5;
+    --line: #DCE1D8;
+    --card: #FFFFFF;
+    /* テナントカラー: いずれもロゴ画像の実測値。薬局 #A61955 / 淡 #F4E2EA、耳鼻科 #009FE8 / 淡 #DFF3FF */
+    --pharm: #A61955;
+    --pharm-ink: #A61955;
+    --pharm-soft: #F4E2EA;
+    --clinic: #009FE8;
+    --clinic-ink: #0080C2; /* 小さい文字用（同じ色相を少し濃く） */
+    --clinic-soft: #DFF3FF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141A17;
+      --bg-soft: #1B2420;
+      --ink: #E7ECE8;
+      --ink-soft: #9FAEA5;
+      --accent: #6FAE8B;
+      --accent-soft: #24382E;
+      --amber: #D9A050;
+      --amber-soft: #3A2F1B;
+      --line: #2A342E;
+      --card: #1B2420;
+      --pharm: #A61955;
+      --pharm-ink: #EE8FB6;
+      --pharm-soft: #3B1A2A;
+      --clinic: #009FE8;
+      --clinic-ink: #5EC4F7;
+      --clinic-soft: #0F2E3F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141A17;
+    --bg-soft: #1B2420;
+    --ink: #E7ECE8;
+    --ink-soft: #9FAEA5;
+    --accent: #6FAE8B;
+    --accent-soft: #24382E;
+    --amber: #D9A050;
+    --amber-soft: #3A2F1B;
+    --line: #2A342E;
+    --card: #1B2420;
+    --pharm: #A61955;
+    --pharm-ink: #EE8FB6;
+    --pharm-soft: #3B1A2A;
+    --clinic: #009FE8;
+    --clinic-ink: #5EC4F7;
+    --clinic-soft: #0F2E3F;
+  }
+  :root[data-theme="light"] {
+    --bg: #FAFAF7;
+    --bg-soft: #F1F3EC;
+    --ink: #24312B;
+    --ink-soft: #5B6A61;
+    --accent: #2E6E4E;
+    --accent-soft: #DCE8DF;
+    --amber: #B97B22;
+    --amber-soft: #F6EAD5;
+    --line: #DCE1D8;
+    --card: #FFFFFF;
+    --pharm: #A61955;
+    --pharm-ink: #A61955;
+    --pharm-soft: #F4E2EA;
+    --clinic: #009FE8;
+    --clinic-ink: #0080C2;
+    --clinic-soft: #DFF3FF;
+  }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  section { scroll-margin-top: 16px; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* たたき台バナー */
+  .draft-note {
+    background: var(--amber-soft);
+    color: var(--amber);
+    text-align: center;
+    font-size: 13px;
+    padding: 8px 16px;
+    letter-spacing: 0.08em;
+  }
+
+  header.site {
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+  }
+  .site-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 18px 0; flex-wrap: wrap;
+  }
+  .site-name { font-size: clamp(26px, 4.5vw, 34px); font-weight: 700; letter-spacing: 0.08em; color: var(--accent); }
+  nav.global { display: flex; gap: 24px; font-size: 14px; }
+  nav.global a { color: var(--ink-soft); text-decoration: none; letter-spacing: 0.05em; }
+  nav.global a:hover, nav.global a:focus-visible { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* ヒーロー */
+  .hero {
+    background:
+      radial-gradient(ellipse 120% 90% at 85% -10%, var(--accent-soft) 0%, transparent 55%),
+      linear-gradient(175deg, var(--bg-soft) 0%, var(--bg) 70%);
+    padding: 88px 0 72px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px; letter-spacing: 0.22em; font-weight: 600;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 6px 18px; border-radius: 999px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: clamp(30px, 5.4vw, 46px);
+    font-weight: 600; letter-spacing: 0.10em; line-height: 1.4;
+    text-wrap: balance; margin: 0 0 20px;
+  }
+  .hero-lead { font-size: 16px; color: var(--ink-soft); letter-spacing: 0.06em; max-width: 44em; }
+  .hero-meta { margin-top: 36px; display: flex; gap: 12px 32px; flex-wrap: wrap; font-size: 14px; color: var(--ink-soft); }
+  .hero-meta b { color: var(--ink); font-weight: 600; }
+  .hero-visual { margin: 48px 0 0; }
+  .hero-visual img {
+    display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+    border-radius: 8px; border: 1px solid var(--line);
+  }
+  .hero-visual figcaption { margin-top: 10px; font-size: 12.5px; color: var(--ink-soft); letter-spacing: 0.06em; }
+
+  /* セクション共通 */
+  section { padding: 64px 0; }
+  section + section { border-top: 1px solid var(--line); }
+  .sec-label {
+    font-size: 12px; letter-spacing: 0.28em; color: var(--accent);
+    font-weight: 700; margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 26px; font-weight: 600; letter-spacing: 0.08em;
+    margin: 0 0 32px; text-wrap: balance;
+  }
+
+  /* フロア案内 */
+  .floor { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .unit {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 24px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .unit .kind { font-size: 12px; letter-spacing: 0.18em; color: var(--ink-soft); font-weight: 600; }
+  .unit .name { font-size: 19px; font-weight: 600; letter-spacing: 0.04em; }
+  /* テナントロゴ: 画像をそのまま使う（白地で作られたロゴなので、ダークモードでも白いカードに載せる） */
+  .unit-logo { margin: 4px 0 6px; background: #FFFFFF; border-radius: 6px; padding: 10px 12px; }
+  .unit-logo img { display: block; width: 100%; height: auto; max-height: 96px; object-fit: contain; object-position: left center; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .unit .desc { font-size: 13.5px; color: var(--ink-soft); }
+  .unit-link, .text-link { color: var(--accent); font-size: 13.5px; font-weight: 600; text-underline-offset: 3px; }
+  .unit-links { margin-top: auto; padding-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+  .unit-info { margin: 6px 0 0; font-size: 13.5px; }
+  .unit-info div { display: grid; grid-template-columns: 5em 1fr; gap: 6px; padding: 6px 0; border-top: 1px solid var(--line); }
+  .unit-info dt { color: var(--ink-soft); }
+  .unit-info dd { margin: 0; color: var(--ink); }
+  .unit-info a { color: var(--ink); text-decoration: none; }
+  /* テナントごとの色: カード上辺・ラベル・チップ・リンクに使う */
+  .unit.pharmacy { --tone: var(--pharm); --tone-ink: var(--pharm-ink); --tone-soft: var(--pharm-soft); }
+  .unit.clinic   { --tone: var(--clinic); --tone-ink: var(--clinic-ink); --tone-soft: var(--clinic-soft); }
+  .unit.pharmacy, .unit.clinic { border-top: 4px solid var(--tone); }
+  .unit.pharmacy .kind, .unit.clinic .kind { color: var(--tone-ink); }
+  .unit.pharmacy .chip, .unit.clinic .chip { background: var(--tone-soft); color: var(--tone-ink); }
+  .unit.pharmacy .unit-link, .unit.clinic .unit-link { color: var(--tone-ink); }
+  .unit.vacant .unit-links { margin-top: 0; padding-top: 12px; }
+  .unit-link .nw { white-space: nowrap; }
+  .unit.pharmacy .unit-info div, .unit.clinic .unit-info div { border-top-color: var(--tone-soft); }
+  .unit-link.button {
+    display: inline-block; align-self: flex-start;
+    background: var(--tone); color: #FFFFFF !important;
+    padding: 9px 20px; border-radius: 999px; text-decoration: none; font-size: 14.5px;
+  }
+  .unit-link.button:hover, .unit-link.button:focus-visible { opacity: 0.88; }
+  .unit.vacant { border: 1px dashed var(--amber); background: var(--amber-soft); }
+  .unit.vacant { --tone: var(--amber); }
+  .unit.vacant .kind { color: var(--amber); }
+  .unit.vacant .name { color: var(--ink); }
+  .chip {
+    align-self: flex-start; font-size: 12px; font-weight: 600;
+    padding: 3px 12px; border-radius: 999px; letter-spacing: 0.08em;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .unit.vacant .chip { background: var(--amber); color: var(--bg); }
+
+  /* 募集 */
+  .recruit {
+    background: var(--bg-soft);
+    border-radius: 6px;
+    padding: 36px 32px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .recruit p { margin: 0; max-width: 40em; word-break: keep-all; overflow-wrap: anywhere; }
+  .recruit .note { font-size: 13px; color: var(--ink-soft); }
+
+  /* アクセス */
+  .access { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  @media (max-width: 720px) { .access { grid-template-columns: 1fr; } }
+  .h2-sub { white-space: nowrap; }
+  .map { aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); background: var(--bg-soft); }
+  .map iframe { display: block; width: 100%; height: 100%; border: 0; }
+  .map-note { margin: 8px 0 0; font-size: 12.5px; color: var(--ink-soft); }
+  .map-ph {
+    aspect-ratio: 4 / 3; border-radius: 6px;
+    background:
+      linear-gradient(45deg, var(--bg-soft) 25%, transparent 25%, transparent 75%, var(--bg-soft) 75%),
+      linear-gradient(45deg, var(--bg-soft) 25%, var(--card) 25%, var(--card) 75%, var(--bg-soft) 75%);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+    border: 1px solid var(--line);
+    display: grid; place-items: center;
+    color: var(--ink-soft); font-size: 13px; letter-spacing: 0.1em;
+  }
+  .access-photo { margin: 20px 0 0; }
+  .access-photo img {
+    display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line);
+  }
+  .access-photo figcaption { margin-top: 8px; font-size: 12.5px; color: var(--ink-soft); letter-spacing: 0.06em; }
+  dl.info { margin: 0; }
+  dl.info div { display: grid; grid-template-columns: 7em 1fr; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+  dl.info dt { color: var(--ink-soft); letter-spacing: 0.06em; }
+  dl.info dd { margin: 0; }
+  .todo { color: var(--amber); font-weight: 600; }
+
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding: 32px 0 48px;
+    font-size: 13px; color: var(--ink-soft);
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  /* スマホ */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    .site-inner { padding: 14px 0 12px; gap: 10px 16px; }
+    .site-name { font-size: clamp(24px, 6.6vw, 28px); letter-spacing: 0.06em; }
+    nav.global { gap: 14px; font-size: 13px; }
+    .hero { padding: 48px 0 44px; }
+    h1 { font-size: clamp(23px, 7.4vw, 30px); letter-spacing: 0.05em; line-height: 1.45; margin-bottom: 16px; }
+    .hero-lead { font-size: 15px; letter-spacing: 0.03em; line-height: 1.9; }
+    .hero-lead br, .recruit p br { display: none; }
+    .hero-meta { margin-top: 28px; gap: 8px 24px; }
+    .hero-visual { margin-top: 32px; }
+    section { padding: 48px 0; }
+    h2 { font-size: 22px; margin-bottom: 24px; }
+    .recruit p { letter-spacing: 0.03em; word-break: normal; }
+    dl.info div { grid-template-columns: 5.5em 1fr; font-size: 14px; }
+    dl.info dd { word-break: keep-all; overflow-wrap: anywhere; }
+    dl.info div { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
+    dl.info dt { font-size: 12px; letter-spacing: 0.14em; color: var(--accent); font-weight: 700; }
+    .recruit { padding: 22px 20px; }
+    .h2-sub { display: block; font-size: 0.72em; letter-spacing: 0.06em; margin-top: 6px; color: var(--ink-soft); }
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-note">テスト版（掲載許可待ちの要素: テナントのロゴ／マイライフ株式会社 開業支援へのリンク。許可が取れたものから公開版へ反映）</div>
+
+<header class="site">
+  <div class="wrap site-inner">
+    <div class="site-name serif">倉敷中島メディカルテラス</div>
+    <nav class="global" aria-label="ページ内">
+      <a href="#floor">フロア案内</a>
+      <a href="#recruit">区画募集</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1 class="serif">地域のかかりつけを、<br>ひとつの場所に。</h1>
+    <p class="hero-lead">倉敷中島メディカルテラスは、調剤薬局と専門クリニックがあつまる医療モールです。<br>受診からお薬の受け取りまで、同じ敷地内でゆとりを持ってお過ごしいただけます。</p>
+    <div class="hero-meta">
+      <span><b>所在地</b>　岡山県倉敷市中島663-11</span>
+      <span><b>駐車場</b>　28台</span>
+    </div>
+    <figure class="hero-visual">
+      <img src="images/building.jpg" width="1600" height="900" alt="倉敷中島メディカルテラスの外観。白い壁の平屋建てに「はまもと耳鼻咽喉科クリニック」と「オール薬局」の看板があり、手前に駐車場が広がる" loading="eager" fetchpriority="high">
+      <figcaption>建物外観（2026年9月撮影）</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section id="floor">
+  <div class="wrap">
+    <div class="sec-label">FLOOR GUIDE</div>
+    <h2 class="serif">フロア案内</h2>
+    <div class="floor">
+      <div class="unit pharmacy">
+        <span class="kind">調剤薬局</span>
+        <div class="unit-logo"><img src="images/logo-owl.png" width="900" height="259" alt="オール薬局 ロゴ" loading="lazy"></div>
+        <span class="name">オール薬局中島店</span>
+        <span class="desc">保険調剤。全ての病医院の処方せんを受け付けます。</span>
+        <dl class="unit-info">
+          <div><dt>開局時間</dt><dd>月・火・水・金 9:00〜18:30<br>土 8:45〜17:00</dd></div>
+          <div><dt>定休日</dt><dd>木・日・祝日</dd></div>
+          <div><dt>TEL</dt><dd><a href="tel:0864865306">086-486-5306</a></dd></div>
+        </dl>
+      </div>
+      <div class="unit clinic">
+        <span class="kind">耳鼻咽喉科</span>
+        <div class="unit-logo"><img src="images/logo-hamamoto.png" width="900" height="431" alt="はまもと耳鼻咽喉科クリニック ロゴ" loading="lazy"></div>
+        <span class="name sr-only">はまもと耳鼻咽喉科クリニック</span>
+        <span class="desc">みみ・はな・のどの診療。</span>
+        <dl class="unit-info">
+          <div><dt>診療時間</dt><dd>月・火・水・金 9:00〜12:30／15:00〜18:30<br>土 8:45〜13:45</dd></div>
+          <div><dt>休診日</dt><dd>木・日・祝日</dd></div>
+          <div><dt>TEL</dt><dd><a href="tel:0864663387">086-466-3387</a></dd></div>
+        </dl>
+        <div class="unit-links">
+          <a class="unit-link" href="https://hamamoto-ent.com/" target="_blank" rel="noopener">クリニックのホームページへ →</a>
+          <a class="unit-link button" href="https://ssc12.doctorqube.com/hamamoto-ent/index.html?stamp=063126" target="_blank" rel="noopener">Web予約はこちら</a>
+        </div>
+      </div>
+      <div class="unit vacant">
+        <span class="chip">募集中</span>
+        <span class="kind">残り1区画</span>
+        <span class="name">開業をご検討の先生へ</span>
+        <span class="desc">1区画を募集しています。診療科目はご相談ください。開業のご相談は、開業支援を行うマイライフ株式会社が承ります。</span>
+        <div class="unit-links">
+          <a class="unit-link button" href="https://ml-consul.jp/" target="_blank" rel="noopener">マイライフ株式会社に相談する</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recruit">
+  <div class="wrap">
+    <div class="sec-label">RECRUIT</div>
+    <h2 class="serif">開業をご検討の先生へ<span class="h2-sub">（1区画募集中）</span></h2>
+    <div class="recruit">
+      <p>倉敷中島メディカルテラスでは、ご開業いただく医療機関を1区画募集しています。<br>調剤薬局と耳鼻咽喉科クリニックが開業しています。</p>
+      <p>診療科目や区画の詳細は、お気軽にお問い合わせください。</p>
+    </div>
+  </div>
+</section>
+
+<section id="access">
+  <div class="wrap">
+    <div class="sec-label">ACCESS</div>
+    <h2 class="serif">アクセス</h2>
+    <div class="access">
+      <div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=%E5%80%89%E6%95%B7%E4%B8%AD%E5%B3%B6%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%86%E3%83%A9%E3%82%B9&amp;hl=ja&amp;z=16&amp;output=embed" title="倉敷中島メディカルテラスの地図" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <p class="map-note">地図が表示されない場合は <a class="text-link" href="https://maps.app.goo.gl/wFdWMBK9Z16tbi4w6" target="_blank" rel="noopener">Googleマップで開く →</a></p>
+        <figure class="access-photo">
+          <img src="images/sign.jpg" width="960" height="818" alt="道路沿いに立つ青い案内看板。「倉敷中島メディカルテラス」の表示と駐車場への矢印があり、奥に駐車場が見える" loading="lazy">
+          <figcaption>道路沿いの青い看板が目印です。矢印の先が駐車場入口です。</figcaption>
+        </figure>
+      </div>
+      <dl class="info">
+        <div><dt>所在地</dt><dd>岡山県倉敷市中島663-11</dd></div>
+        <div><dt>駐車場</dt><dd>28台</dd></div>
+        <div><dt>交通</dt><dd>
+          国道429号（旧国道2号）沿い、大西交差点から東へ1.2km<br>
+          JR山陽本線「西阿知駅」から約1.4km（徒歩約18分・お車で約3分）<br>
+          倉敷市立中島小学校から約340m（徒歩約5分）<br>
+          中島保育園から約80m（徒歩約1分）<br>
+          両備バス「中島口」バス停から徒歩約8分<br>
+          ファミリーマート中島南店すぐそば
+        </dd></div>
+        <div><dt>開業日</dt><dd>2026年10月13日（火）</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-label">CONTACT</div>
+    <h2 class="serif">お問い合わせ</h2>
+    <p>運営：倉敷中島メディカルテラス　代表　萱谷誠司</p>
+    <p style="font-size:13.5px; color:var(--ink-soft);">各クリニック・薬局の診療内容については、各院へ直接お問い合わせください。</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="serif" style="font-size:15px; color:var(--ink);">倉敷中島メディカルテラス</div>
+    <div>代表　萱谷誠司</div>
+    <div>© 2026 Kurashiki Nakashima Medical Terrace</div>
+  </div>
+</footer>
+</body>
+</html>
